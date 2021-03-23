@@ -1,0 +1,229 @@
+		* {
+  padding: 0;
+  margin: 0;
+  margin-bottom: -0.1%;
+  scroll-behavior: smooth; /*Use for smooth scroll behavior*/
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: "Poppins";
+  overflow-y: scroll; /*If the Y-Axis overflow, scroll bar will show*/
+}
+h2 {
+  font-size: 30px;
+  letter-spacing: 5px;
+ 
+}
+h3{
+	color:  #5db2ff;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #e6e6e6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+ 
+}
+
+.sidenav a:hover {
+  color: black;
+   
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	.aside-nav {
+  height: 100%;
+  width: 0; /* for hiding the side nav*/
+  position: fixed; /*for fixed position, so that it is still in the side when scrolling*/
+  z-index: 2; /* use for it to be visible on top */
+  top: 0; /*so that the side nav will start at top 0 or 0padding and margin*/
+  left: 0; /*so that the side nav will start at left 0 or 0 padding and margin*/
+  background-color: white;
+  overflow-x: hidden; /* When text in the side nav overflow in x-axis it will be hidden*/
+  transition: all 1s ease-in-out; /*Transition in opening and closing the side nav*/
+  padding-top: 60px;
+  color: #f2f2f2;
+}
+
+#close-icon,
+#drop-icon {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 30px;
+}
+
+#show-icon {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+#show-icon:hover {
+  background-color: #4da6ff;
+}
+
+#show{
+  visibility: hidden; /*Use to hide the input checkbox and radio button*/
+}
+
+#show:checked {
+  /*~ use to select the preceded .aside-nav or use to select the class after the input radio button show*/
+  display: block;
+  z-index: 1; /*Z-index use to indicate the stack order. The higher the number meaning it should be on top of something*/
+  width: 250px;
+  /*This block of code is for opening the side nav*/
+}
+
+
+#drop-show a {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+#drop-show a:hover {
+  cursor: pointer;
+  background-color: rgb(172, 172, 172);
+}
+#drop-show {
+  display: none;
+  width: 0;
+  height: 0;
+  background-color: white;
+  padding: 10px;
+}
+
+#drop-icon:active {
+  background-color: #333533;
+}
+
+#drop:checked ~ #drop-show {
+  /*For showing the option for dropdown*/
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+.top-nav {
+  position: fixed; /*Use to position the top nav as fixed, meaning even when the user scroll it will still be visible at the top*/
+  top: 0;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+  color: black;
+}
+
+.top-nav ul {
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex; /*Use as declaration when you are using flexbox*/
+  justify-content: space-between; /*Space between horizontal content of the top nav ul*/
+}
+
+.top-nav ul li {
+  list-style-type: none;
+}
+.card_top{
+margin: 100px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 12%;
+padding-top: 5px;
+}
+.container {
+
+	margin: -200px 10px;
+	width: 100%;
+	padding-top: 5px;
+	display: flex;
+	flex-direction: center;
+}
+.card1{
+margin: 130px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 12%;
+padding-top: 5px;
+  
+}
+.card2 {
+   padding: 2px 16px;
+
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button1{
+	background-color: #5db2ff;
+	font-family: 'Poppins';
+	border: none;
+	color: white;
+	padding: 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	margin: 4px 2px;
+	border-radius: 15px;
+	font-size: 15px;
+	
+}
+.button2{
+	background-color: #5db2ff;
+	font-family: 'Poppins';
+	border: none;
+	color: white;
+	padding: 3px 10px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 15px;
+	font-size: 12px;
+	margin-top: 0%;
+	margin-left: 65%;
+	margin-bottom: 5%;
+ 
+}
+hr{ 
+	color: #5db2ff;
+	border: 2px solid;
+	
+}
